@@ -12,8 +12,9 @@ This project is for **educational purposes only**. Downloading videos from YouTu
 
 
 ## Installation and Setup
-1. **Install UiPath Studio**:
-   - Download and install UiPath Studio from here https://www.simplilearn.com/tutorials/rpa-tutorial/uipath-installation.
+1. **Install UiPath Studio and Youtube Videos Downloader**:
+   - Guide for installing UiPath Studio - https://www.simplilearn.com/tutorials/rpa-tutorial/uipath-installation.
+   - Guide for installing Youtube Videos Downloader - https://github.com/shaked6540/YoutubePlaylistDownloader
    
 2. **Clone the Repository**:
    ```bash
