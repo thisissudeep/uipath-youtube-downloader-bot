@@ -1,0 +1,448 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>UiPath.UIAutomationNext</x:String>
+      <x:String>Microsoft.VisualBasic.CompilerServices</x:String>
+      <x:String>Microsoft.Win32.SafeHandles</x:String>
+      <x:String>System.Numerics</x:String>
+      <x:String>System.Net</x:String>
+      <x:String>System.Globalization</x:String>
+      <x:String>System.Configuration.Assemblies</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.CodeDom.Compiler</x:String>
+      <x:String>System.Buffers</x:String>
+      <x:String>System.Buffers.Text</x:String>
+      <x:String>System.Buffers.Binary</x:String>
+      <x:String>System.Threading</x:String>
+      <x:String>System.Threading.Tasks</x:String>
+      <x:String>System.Threading.Tasks.Sources</x:String>
+      <x:String>System.Text</x:String>
+      <x:String>System.Text.Unicode</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.Security.Principal</x:String>
+      <x:String>System.Security.Permissions</x:String>
+      <x:String>System.Security.Cryptography</x:String>
+      <x:String>System.Runtime</x:String>
+      <x:String>System.Runtime.Remoting</x:String>
+      <x:String>System.Runtime.ExceptionServices</x:String>
+      <x:String>System.Runtime.ConstrainedExecution</x:String>
+      <x:String>System.Runtime.Versioning</x:String>
+      <x:String>System.Runtime.Loader</x:String>
+      <x:String>System.Runtime.Intrinsics</x:String>
+      <x:String>System.Runtime.Intrinsics.Wasm</x:String>
+      <x:String>System.Runtime.Intrinsics.Arm</x:String>
+      <x:String>System.Runtime.Intrinsics.X86</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>System.Runtime.InteropServices.ObjectiveC</x:String>
+      <x:String>System.Runtime.InteropServices.Marshalling</x:String>
+      <x:String>System.Runtime.InteropServices.ComTypes</x:String>
+      <x:String>System.Runtime.CompilerServices</x:String>
+      <x:String>System.Resources</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Reflection.Metadata</x:String>
+      <x:String>System.Reflection.Emit</x:String>
+      <x:String>System.IO.Enumeration</x:String>
+      <x:String>System.Diagnostics.SymbolStore</x:String>
+      <x:String>System.Diagnostics.Contracts</x:String>
+      <x:String>System.Diagnostics.CodeAnalysis</x:String>
+      <x:String>System.Diagnostics.Tracing</x:String>
+      <x:String>System.Collections.Concurrent</x:String>
+      <x:String>Internal</x:String>
+      <x:String>System.CodeDom</x:String>
+      <x:String>Microsoft.CSharp</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Linq.Expressions.Interpreter</x:String>
+      <x:String>System.Dynamic</x:String>
+      <x:String>UiPath.Workflow.Runtime</x:String>
+      <x:String>System.Activities.Tracking</x:String>
+      <x:String>System.Activities.Statements.Tracking</x:String>
+      <x:String>System.Activities.Runtime</x:String>
+      <x:String>System.Activities.Runtime.DurableInstancing</x:String>
+      <x:String>System.Activities.Runtime.Collections</x:String>
+      <x:String>System.Activities.ParallelTracking</x:String>
+      <x:String>System.Activities.Hosting</x:String>
+      <x:String>System.Activities.Persistence</x:String>
+      <x:String>System.Activities.DurableInstancing</x:String>
+      <x:String>System.ComponentModel.Design.Serialization</x:String>
+      <x:String>System.Text.RegularExpressions</x:String>
+      <x:String>Microsoft.VisualBasic.FileIO</x:String>
+      <x:String>UiPath.Activities.System.Collections</x:String>
+      <x:String>Microsoft</x:String>
+      <x:String>UiPath.IntegrationService.Activities.Runtime.Models.FilterBuilder</x:String>
+      <x:String>UiPath.IntegrationService.Activities.Runtime.Models</x:String>
+      <x:String>UiPath.IntegrationService.Activities.Runtime.Helpers.TypeDetailsCustomization</x:String>
+      <x:String>UiPath.IntegrationService.Activities.Runtime.Activities</x:String>
+      <x:String>UiPath.Platform.Activities</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Services.RuntimeAnalyze</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>UiPath.Word.Activities</x:String>
+      <x:String>UiPath.UIAutomationNext.Triggers</x:String>
+      <x:String>UiPath.Platform.Triggers</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Triggers</x:String>
+      <x:String>UiPath.Platform.Triggers.Scope</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.Watcher</AssemblyReference>
+      <AssemblyReference>System.IO.Packaging</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.AccessControl</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.DriveInfo</AssemblyReference>
+      <AssemblyReference>System.Linq.Async.Queryable</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Linq.Parallel</AssemblyReference>
+      <AssemblyReference>System.Collections.Immutable</AssemblyReference>
+      <AssemblyReference>System.Linq.Queryable</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Forms</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
+      <AssemblyReference>System.IO.Pipes</AssemblyReference>
+      <AssemblyReference>System.Security.Cryptography</AssemblyReference>
+      <AssemblyReference>System.Security.Principal.Windows</AssemblyReference>
+      <AssemblyReference>System.Diagnostics.Process</AssemblyReference>
+      <AssemblyReference>System.IO.MemoryMappedFiles</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Registry</AssemblyReference>
+      <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
+      <AssemblyReference>System.Net.Primitives</AssemblyReference>
+      <AssemblyReference>System.Net.HttpListener</AssemblyReference>
+      <AssemblyReference>System.Net.WebProxy</AssemblyReference>
+      <AssemblyReference>System.Net.NameResolution</AssemblyReference>
+      <AssemblyReference>System.Net.WebClient</AssemblyReference>
+      <AssemblyReference>System.Net.Requests</AssemblyReference>
+      <AssemblyReference>System.Net.ServicePoint</AssemblyReference>
+      <AssemblyReference>System.Net.WebHeaderCollection</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.CodeDom</AssemblyReference>
+      <AssemblyReference>System.Threading.AccessControl</AssemblyReference>
+      <AssemblyReference>System.Threading</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Core</AssemblyReference>
+      <AssemblyReference>UiPath.Vision.Core</AssemblyReference>
+      <AssemblyReference>UiPath.WorkflowEvents.Activities</AssemblyReference>
+      <AssemblyReference>System.Threading.Tasks.Parallel</AssemblyReference>
+      <AssemblyReference>System.Text.Encoding.CodePages</AssemblyReference>
+      <AssemblyReference>System.Text.Encodings.Web</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.Security.Claims</AssemblyReference>
+      <AssemblyReference>System.Security.Cryptography.Pkcs</AssemblyReference>
+      <AssemblyReference>System.Security.Cryptography.ProtectedData</AssemblyReference>
+      <AssemblyReference>System.Windows.Forms.Design</AssemblyReference>
+      <AssemblyReference>System.Runtime.CompilerServices.VisualC</AssemblyReference>
+      <AssemblyReference>System.Windows.Forms</AssemblyReference>
+      <AssemblyReference>System.Resources.Writer</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>Microsoft.PowerShell.Commands.Diagnostics</AssemblyReference>
+      <AssemblyReference>System.Diagnostics.FileVersionInfo</AssemblyReference>
+      <AssemblyReference>System.Diagnostics.DiagnosticSource</AssemblyReference>
+      <AssemblyReference>System.Diagnostics.TraceSource</AssemblyReference>
+      <AssemblyReference>System.Diagnostics.EventLog</AssemblyReference>
+      <AssemblyReference>System.Diagnostics.PerformanceCounter</AssemblyReference>
+      <AssemblyReference>System.Diagnostics.TextWriterTraceListener</AssemblyReference>
+      <AssemblyReference>System.Diagnostics.StackTrace</AssemblyReference>
+      <AssemblyReference>System.Collections.Concurrent</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>System.Text.RegularExpressions</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualStudio.Validation</AssemblyReference>
+      <AssemblyReference>System.Reflection.MetadataLoadContext</AssemblyReference>
+      <AssemblyReference>UiPath.IntegrationService.Activities.Runtime</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>UiPath.Word.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Word.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Word</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <sap:WorkflowViewStateService.ViewState>
+    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+      <x:Boolean x:Key="ShouldExpandAll">False</x:Boolean>
+      <x:Boolean x:Key="ShouldCollapseAll">False</x:Boolean>
+    </scg:Dictionary>
+  </sap:WorkflowViewStateService.ViewState>
+  <Sequence sap2010:Annotation.AnnotationText="" DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1282,2758" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="extracted_video_URLs" />
+      <Variable x:TypeArguments="x:String" Name="downloader_ready" />
+      <Variable x:TypeArguments="x:String" Name="URLs_pasted" />
+      <Variable x:TypeArguments="x:String" Name="download_started" />
+      <Variable x:TypeArguments="x:Int32" Name="count" />
+      <Variable x:TypeArguments="x:String" Name="allUrlsStrFormat" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard DisplayName="Navigate to YouTube subscriptions page in Chrome" sap:VirtualizedContainerService.HintSize="538,1440" sap2010:WorkflowViewState.IdRef="NApplicationCard_12" InteractionMode="DebuggerApi" ScopeGuid="a36c19d9-4e91-4f2e-8cc2-d1ca9c136461">
+      <uix:NApplicationCard.AutoGenerationOptions>
+        <uix:GenerationOptions Prompt="Open YouTube subscriptions page and extract video URLs" Url="https://www.youtube.com/feed/subscriptions">
+          <uix:GenerationOptions.ExpectedInputs>
+            <scg:List x:TypeArguments="x:String" Capacity="4">
+              <x:String>specified count of videos</x:String>
+            </scg:List>
+          </uix:GenerationOptions.ExpectedInputs>
+          <uix:GenerationOptions.ExpectedOutputs>
+            <scg:List x:TypeArguments="x:String" Capacity="4">
+              <x:String>extracted_video_URLs</x:String>
+            </scg:List>
+          </uix:GenerationOptions.ExpectedOutputs>
+        </uix:GenerationOptions>
+      </uix:NApplicationCard.AutoGenerationOptions>
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence sap:VirtualizedContainerService.HintSize="504,1191" sap2010:WorkflowViewState.IdRef="Sequence_20">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="sd:DataTable" Name="yt_extract" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <Delay Duration="00:00:10" sap:VirtualizedContainerService.HintSize="470,122" sap2010:WorkflowViewState.IdRef="Delay_1" />
+            <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Display input dialog to get a number from the user" sap:VirtualizedContainerService.HintSize="470,271" sap2010:WorkflowViewState.IdRef="InputDialog_3" IsPassword="False" Label="Please enter a number:" Title="Input Required">
+              <ui:InputDialog.Result>
+                <OutArgument x:TypeArguments="x:Int32">[count]</OutArgument>
+              </ui:InputDialog.Result>
+            </ui:InputDialog>
+            <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[yt_extract]" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured' AddCvHeader='true' IsScrollEnabled='false'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='vid_urls'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;true&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;column exact='1' name='Column0' attr='href'&gt;&lt;webctrl tag='ytd-rich-item-renderer' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='ytd-rich-grid-media' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='3' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='h3' idx='1' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;webctrl tag='yt-formatted-string' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="470,189" sap2010:WorkflowViewState.IdRef="NExtractData_1" LimitExtractionTo="Rows" MaximumResults="[count]" ScopeIdentifier="a36c19d9-4e91-4f2e-8cc2-d1ca9c136461" Version="V4">
+              <uix:NExtractData.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.youtube.com/feed/subscriptions" DesignTimeRectangle="80, 95, 1277, 12907" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;webctrl id='contents' parentid='primary' tag='DIV' /&gt;" Guid="97e4d77c-638c-42bd-8769-5b6af33600a9" InformativeScreenshot="ae6a69b48900be13fdf6640a8f1fc2f6.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Subscriptions - YouTube' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+              </uix:NExtractData.Target>
+            </uix:NExtractData>
+            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[yt_extract]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="470,345" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+              <ui:ForEachRow.Body>
+                <ActivityAction x:TypeArguments="sd:DataRow">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="468,165" sap2010:WorkflowViewState.IdRef="Sequence_29">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <Assign sap:VirtualizedContainerService.HintSize="434,105" sap2010:WorkflowViewState.IdRef="Assign_1">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="x:String">[allUrlsStrFormat]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="x:String">[String.Join(Environment.NewLine, yt_extract.AsEnumerable().Select(Function(row) row("vid_urls").ToString()).ToArray())]</InArgument>
+                      </Assign.Value>
+                    </Assign>
+                  </Sequence>
+                </ActivityAction>
+              </ui:ForEachRow.Body>
+            </ui:ForEachRow>
+            <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="470,117" sap2010:WorkflowViewState.IdRef="MessageBox_4" Text="[allUrlsStrFormat]" />
+            <ui:SetToClipboard DisplayName="Set To Clipboard" sap:VirtualizedContainerService.HintSize="470,85" sap2010:WorkflowViewState.IdRef="SetToClipboard_1" Text="[allUrlsStrFormat]" />
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-8, -8, 1382, 754" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="c7eadd4c84a6202be9543b7a473f55ee.jpg" Selector="&lt;html app='chrome.exe' title='Subscriptions - YouTube' /&gt;" Title="Subscriptions - YouTube" Url="https://www.youtube.com/feed/subscriptions" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="YouTube Playlist Downloader" sap:VirtualizedContainerService.HintSize="538,1264" sap2010:WorkflowViewState.IdRef="NApplicationCard_15" OpenMode="IfNotOpen" ScopeGuid="364fe48b-2f71-4fd4-afe6-1b2bf18dc903" Version="V2" WindowResize="Maximize">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence sap2010:Annotation.AnnotationText="" DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,950" sap2010:WorkflowViewState.IdRef="Sequence_34">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'BulkDownloadElement'" sap:VirtualizedContainerService.HintSize="416,225" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="364fe48b-2f71-4fd4-afe6-1b2bf18dc903" Version="V4">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable CVScreenId="ceb2d172-227a-4938-9810-ec0b5f3f390c" ContentHash="p9OmApuhAUKOrv9TgpUxag" CvTextArea="269, 70, 178, 25" CvType="AnyWordGroup" DesignTimeRectangle="269, 64, 177, 35" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="&lt;ctrl name='Bulk Download' role='page tab' /&gt;&lt;ctrl role='text' automationid='' /&gt;" Guid="7cbcc415-293c-405f-82ed-d129cf35f7e8" InformativeScreenshot="af22eb77952df338925408423885a4b4.png" Reference="CGhIdTUFvE-wFdoQ7kx0vw/mQdTJVf5P0yxr-Qs7Um9wQ" ScopeSelectorArgument="&lt;wnd app='youtubeplaylistdownloader.exe' cls='HwndWrapper*' title='YouTube Playlist Downloader' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="ceb2d172-227a-4938-9810-ec0b5f3f390c" CvTextArea="178, 72, 80, 24" CvTextArgument="Queue" CvType="Text" DesignTimeRectangle="179, 64, 78, 35" ElementType="Text" FullSelectorArgument="&lt;ctrl automationid='QueueMetroTabItem' /&gt;&lt;ctrl name='Queue' role='text' /&gt;" FuzzySelectorArgument="&lt;ctrl automationid='QueueMetroTabItem' /&gt;&lt;ctrl name='Queue' role='text' automationid='' check:text='Queue' /&gt;" Guid="0fe5594a-7eda-41b2-b2b3-5892333fa834" SearchSteps="Selector, FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                  <uix:TargetAnchorable.PointOffset>
+                    <uix:PointOffset Position="TopRight" X="-86" Y="14" />
+                  </uix:TargetAnchorable.PointOffset>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click Link Box" sap:VirtualizedContainerService.HintSize="416,225" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="364fe48b-2f71-4fd4-afe6-1b2bf18dc903" Version="V4">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="91, 109, 1200, 466" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;ctrl name='Bulk Download' role='page tab' /&gt;&lt;ctrl automationid='BulkScrollViewer' /&gt;&lt;ctrl automationid='BulkLinksTextBox' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Bulk Download' role='page tab' /&gt;&lt;ctrl automationid='BulkScrollViewer' /&gt;&lt;ctrl automationid='BulkLinksTextBox' role='editable text' /&gt;" Guid="105afc4d-d184-4b22-be67-a389197d5ef4" InformativeScreenshot="f0615b715ac06374071835dcecc9ce46.png" ScopeSelectorArgument="&lt;wnd app='youtubeplaylistdownloader.exe' cls='HwndWrapper*' title='YouTube Playlist Downloader' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive" />
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="Input 'YouTube Playlist Downlo…'" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Target>
+                    <uix:TargetAnchorable DesignTimeRectangle="91, 109, 1200, 466" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;ctrl name='Bulk Download' role='page tab' /&gt;&lt;ctrl automationid='BulkScrollViewer' /&gt;&lt;ctrl automationid='BulkLinksTextBox' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Bulk Download' role='page tab' /&gt;&lt;ctrl automationid='BulkScrollViewer' /&gt;&lt;ctrl automationid='BulkLinksTextBox' role='editable text' /&gt;" Guid="39a4c5e4-85ce-4e38-9e81-e934e9c39b17" InformativeScreenshot="544579ecc5f6d3bf1637a58f4abe9032.png" ScopeSelectorArgument="&lt;wnd app='youtubeplaylistdownloader.exe' cls='HwndWrapper*' title='YouTube Playlist Downloader' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive">
+                      <uix:TargetAnchorable.Anchors>
+                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                          <uix:Target CVScreenId="d0c97422-d503-42ae-af4f-27b264cf8556" CvTextArea="536, 39, 311, 22" CvTextArgument="YouTube Playlist Downloader" CvType="Text" DesignTimeRectangle="538, 33, 306, 32" ElementType="Text" FullSelectorArgument="&lt;ctrl name='YouTube Playlist Downloader' role='text' /&gt;" FuzzySelectorArgument="&lt;ctrl name='YouTube Playlist Downloader' role='text' automationid='' check:text='YouTube Playlist Downloader' /&gt;" Guid="c03a5fd6-3865-45ed-883a-361be0ad5a66" SearchSteps="Selector, FuzzySelector, CV" />
+                        </scg:List>
+                      </uix:TargetAnchorable.Anchors>
+                    </uix:TargetAnchorable>
+                  </uix:VerifyExecutionOptions.Target>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Send Hotkey 'editable text'" sap:VirtualizedContainerService.HintSize="416,189" sap2010:WorkflowViewState.IdRef="SendHotkey_1" Key="&quot;v&quot;" KeyModifiers="Ctrl" SpecialKey="False">
+              <ui:SendHotkey.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="20d9f505-1919-4139-bb44-1ecc00812e56" InformativeScreenshot="be34158533163ed855667ee089a505db" Selector="&lt;ctrl name='Bulk Download' role='page tab' /&gt;&lt;ctrl automationid='BulkLinksTextBox' /&gt;">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                  <ui:Target.WaitForReady>
+                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                  </ui:Target.WaitForReady>
+                </ui:Target>
+              </ui:SendHotkey.Target>
+            </ui:SendHotkey>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Download'" sap:VirtualizedContainerService.HintSize="416,218" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="364fe48b-2f71-4fd4-afe6-1b2bf18dc903" Version="V4">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable CVScreenId="47d5e934-e926-49a3-9c5f-c02235585de4" CvElementArea="578, 554, 123, 98" CvTextArea="587, 625, 73, 15" CvTextArgument="Download" CvType="Button" DesignTimeRectangle="579, 552, 122, 100" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;ctrl name='Bulk Download' role='page tab' /&gt;&lt;ctrl automationid='BulkDownloadButton' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Bulk Download' role='page tab' /&gt;&lt;ctrl automationid='BulkDownloadButton' role='push button' check:fulltext='Download' /&gt;" Guid="6da9f44f-240a-43f2-ac8f-f2f7d58398fa" InformativeScreenshot="84cc2ed7ee4da6c153b4d671efe7c472.png" ScopeSelectorArgument="&lt;wnd app='youtubeplaylistdownloader.exe' cls='HwndWrapper*' title='YouTube Playlist Downloader' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                  <uix:TargetAnchorable.PointOffset>
+                    <uix:PointOffset Position="BottomLeft" X="59" Y="-49" />
+                  </uix:TargetAnchorable.PointOffset>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="Button 'Download'" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Target>
+                    <uix:TargetAnchorable CVScreenId="760231a4-a5ef-4631-a7eb-6cbb940ad87a" CvElementArea="578, 554, 123, 98" CvTextArea="587, 625, 73, 15" CvTextArgument="Download" CvType="Button" DesignTimeRectangle="579, 552, 122, 100" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;ctrl name='Bulk Download' role='page tab' /&gt;&lt;ctrl automationid='BulkDownloadButton' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Bulk Download' role='page tab' /&gt;&lt;ctrl automationid='BulkDownloadButton' role='push button' check:fulltext='Download' /&gt;" Guid="7804a54b-4bd7-4708-a5e9-192ead886c29" InformativeScreenshot="dad2b01eabce182391179abfc2fa2448.png" ScopeSelectorArgument="&lt;wnd app='youtubeplaylistdownloader.exe' cls='HwndWrapper*' title='YouTube Playlist Downloader' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                      <uix:TargetAnchorable.Anchors>
+                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                          <uix:Target CVScreenId="760231a4-a5ef-4631-a7eb-6cbb940ad87a" CvElementArea="618, 577, 41, 48" CvType="Icon" DesignTimeRectangle="616, 575, 45, 52" ElementType="Icon" Guid="d0ae23a7-7795-41e6-b4e6-36a718ada972" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAC0AAAA0CAYAAAAew7HJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHPSURBVGhD7da7SsRAGIZhu70E72CvwMrOQkvB0k6w1FLXA3hYL8HOm7GwsBFtxEKylZV27lFko+O+IYGw/slMJjNBYT54QcxhHlBWF64XW+q/FdBNFdBNFdBN5RR9015UunGP9GyVAjqgSwrogC4poAO6pIAO6JIC+k+h79dX1OP2pnhtPt1ul9ric/k4725tWbxGRuiHjVX1PZ0awXXToQHHo2FypnSdjNHs8+1VPXd2xXuo7q8H7+YM5gzNyuB10Hkwc4pmRXBb9DyYOUczCW6DlsDMC5rNw6uii8DMG5rl4VXQZWDmFc3yH4e68ZGXfayVzTuaZXDdnna2tGBWG81fJ5MB183kHsZPQ7KQEZqikz017b+nr/Q3zuAsyZBljKbodN8rPAHPzpDOzlcJTQl80E+PcTfeaQKmymiKzjpO4Ql49k7pLCkrNHFIPBykx9qPd1QBkzWaovMDo4+vovEs75DeXVYtNNnCbcFUG0297qGKx6OUox/38oz0LpOcoMkUXhdMztDU6x6peDJOeb/HNe6Rnq2SUzQVwV2ByTmaehfH6utjknJV8jXfk+61yQua+P8h28vVpXiPbd7QBNw1mLyifRXQTRXQzdRSPyFHVvH6YhfuAAAAAElFTkSuQmCC" SearchSteps="CV" TargetType="ComputerVisionBased" />
+                        </scg:List>
+                      </uix:TargetAnchorable.Anchors>
+                    </uix:TargetAnchorable>
+                  </uix:VerifyExecutionOptions.Target>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="0, 0, 1366, 738" ContentHash="wZ1Cz2qqSE6e7SundYeAAw" FilePath="C:\Program Files (x86)\YouTube Playlist Downloader\youtubeplaylistdownloader.exe" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKRSURBVFhH7dbPaxNBFAfwKT2K5yAepLg/ujOzSSSUUGsp/rioIHjx1ENP1TR46n+gf4mHXLpb0ho1tNUqSZoqmmarRSlUQbC0Eg/+IITQbp9vtjakYWK3UrIeeviwZObN+z52ICwBgK4gHQ/w/w5Q7oudKEfDISdq9iDDiZiR5ajZ54R5/3I0PIRPxC7u4kN/1nAPa7DWO4NnRQ/RS5YhNAYom/y6Y/IsWkd1x2RwtERPviEyRNa+AZZMNl42KXSSyPQGKJnsdImzOoIOq4ts8oazu5LNjhDZ5BWnKQQBSZGXjOURBGSBFBlbLVIKfq0MD8Pa/XuwGI1K9w8Fs8kC5ZUFysCvD2NJ2NnZhp+f1mBlfByKZlha5w+vkILBqgj8eo8DALie7a06bC69BidxBwqUS+sPUCM5g7m5Xgp+rSTGGgMI4m1Uf32Hzy+eQWlkBLCf9JwUZpPnvdRF4NfblgH2iLfxbfMLrE2nIRfrk56VcMm8xtx5lYJfy7flA7g4wLplQ2HwkvRcGy55qlAXgV/OaMsVuFuw8TADxStXpfUHcMmcYlQR+FUeTewG491/nZ2D4rUb0jqfqmRWYZUZhYFfS/gGKrkcLN68Jd0/pArJKnQ1e5aCXzN6WLr+TzCbPFFoHkFA8uSRQlOP8T6CILJJRqXJjGaAR22yt9bqb3vNmns1n9m3RpNkWqOnphSjhqDDaiLb+yRLqyyZxj+FNN5LR6jMFZkiu/FROqnSAfTAVuk79AO5CI6I6CV6fsSM9KTGLu/ltv0snzg/2G3TyElb5yFL52csnamWSg38HbE0GrM1FrcVox+bDnhPncctxTiHT9PSmI71PbbOQqLHRPxCtyxDaDtApxwPEPAA0PUb471mhicXJgIAAAAASUVORK5CYII=" InformativeScreenshot="a973c89038877d4a16e806d3d503db1a.png" Reference="CGhIdTUFvE-wFdoQ7kx0vw/7IdyQyIADkCz8NQYhgSW0w" Selector="&lt;wnd app='youtubeplaylistdownloader.exe' cls='HwndWrapper*' title='YouTube Playlist Downloader' /&gt;" Title="YouTube Playlist Downloader" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
