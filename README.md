@@ -1,22 +1,34 @@
-# uipath-youtube-downloader-bot
+# UiPath Youtube Downloader Bot
+
 An automation project built using **UiPath** to simplify the process of downloading YouTube videos/audios. This bot interacts with the browser to search for videos and download them via third-party tools, ensuring an efficient workflow.
 
+[Video Explanation: Watch on LinkedIn](https://www.linkedin.com/posts/thisissudeep_rpa-uipath-automation-activity-7281549557069455361-Hbr8?utm_source=share&utm_medium=member_desktop&rcm=ACoAADm-mlkBp4kj3nB6gz-7AcPS-fB3E_OhQ24)
 
-##  Features
+<br>
+
+<div align="center">
+  <img src="./assets/demo.png" alt="Download YT Videos" width="700">
+  <p><strong>Figure 1:</strong> Video Downloads</p>
+</div>
+
+<br><br>
+
+## Features
+
 - Downloads videos or audio files in desired quality.
 - Compatible with multiple third-party YouTube downloaders.
 
-
 ## Legal Disclaimer
+
 This project is for **educational purposes only**. Downloading videos from YouTube without proper authorization or permission may violate **YouTube's Terms of Service** and **copyright laws**. Users are responsible for ensuring they comply with applicable laws when using this bot.
 
-
 ## Installation and Setup
+
 1. **Install UiPath Studio and Youtube Videos Downloader**:
    - Guide for installing UiPath Studio - https://www.simplilearn.com/tutorials/rpa-tutorial/uipath-installation.
    - Guide for installing Youtube Videos Downloader - https://github.com/shaked6540/YoutubePlaylistDownloader
-   
 2. **Clone the Repository**:
+
    ```bash
    git clone https://github.com/thisissudeep/uipath-youtube-downloader-bot
    ```
@@ -27,3 +39,5 @@ This project is for **educational purposes only**. Downloading videos from YouTu
 - Launch UiPath Studio and use the Open Project option to select the folder containing the project files.
 - Double-click on Main.xaml to open it in UiPath Studio.
 - Click on the Run button to execute the workflow.
+
+---
